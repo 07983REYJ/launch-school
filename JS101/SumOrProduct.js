@@ -14,12 +14,12 @@ if (action === "p") {
   let result = arr.reduce(function(acc, cur) {
     return acc * cur;
   });
-  console.log(result);
+  console.log(`The product of the integers between 1 and ${num} is ${result}`);
 }
 
 if (action === "s") {
   let result = arr.reduce(function(acc, cur) {
     return acc + cur;
   });
-  console.log(result);
+  console.log(`The sum of the integers between 1 and ${num} is ${result}`);
 }
