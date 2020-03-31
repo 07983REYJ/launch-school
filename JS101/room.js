@@ -6,7 +6,7 @@ let length = readLineSync.prompt();
 console.log("Enter the width of the room in meters: ");
 let width = readLineSync.prompt();
 
-let squareMeter = length * width;
-let squareFeet = (squareMeter * 10.739).toFixed(2);
+let squareMeters = length * width;
+let squareFeet = (squareMeters * 10.739).toFixed(2);
 
-console.log(`${squareMeter} (${squareFeet} square feet)`);
+console.log(`${squareMeters} (${squareFeet} square feet)`);
