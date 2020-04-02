@@ -1,11 +1,5 @@
-function multisum(number) {
-  let total = 0;
-  for (let i = 1; i <= number; i += 1) {
-    if (i % 3 === 0 || i % 5 === 0) {
-      total += i;
-    }
+function forLoop(data) {
+  for (let i = 0; i < data.length; i += 1) {
+    console.log();
   }
-  return total;
 }
-
-console.log(multisum(1000));
