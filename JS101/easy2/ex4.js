@@ -4,4 +4,8 @@ const square = number => {
   return multiply(number, number);
 };
 
-console.log(square(9));
+function toThePower(number, power) {
+  return number ** power;
+}
+
+console.log(toThePower(5, 9));
