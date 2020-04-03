@@ -1,11 +1,14 @@
 let array = ["a", "b", "c", "d", "e"];
-let i;
-let newArray = [];
 
-for (i = 0; i < array.length; i += 1) {
-  if (i % 2 === 1) {
-    continue;
+function oddities(array) {
+  let oddArray = [];
+  for (let i = 0; i < array.length; i += 1) {
+    if (i % 2 === 1) {
+      continue;
+    }
+    oddArray.push(array[i]);
   }
-  newArray.push(array[i]);
+  return oddArray;
 }
-console.log(newArray);
+
+console.log(oddities(array));
