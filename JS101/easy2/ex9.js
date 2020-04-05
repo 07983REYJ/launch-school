@@ -18,11 +18,12 @@ function hexConvert(string) {
     F: 15
   };
   string = string.toUpperCase();
+  let total = 0;
   let array = string
     .split("")
     .map(e => DIGITS[e])
     .reverse();
-  let total = 0;
+
   array.forEach((digit, idx) => (total += 16 ** idx * digit));
   return total;
 }
