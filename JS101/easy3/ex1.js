@@ -1,11 +1,10 @@
-function crunch(string) {
-  let array = string.split("");
-  let array2 = [];
+let string = "";
+let text = "";
 
-  for (let i = 0; i < array.length; i += 1) {
-    if (array[i] === array[i + 1] || array[i] === " ") {
-      array2.push(array[i]);
-    }
+for (let i = 0; i < string.length; i++) {
+  if (string[i] !== string[i + 1]) {
+    text = text + string[i];
   }
-  return array2.join("");
 }
+
+console.log(text);
